@@ -90,6 +90,8 @@ It will return "PONG"
 That's it! 
 
 To edit the config file you can run *sudo nano redis.conf*\
+**update: Just learnt about remote - wsl extension in vs code that let you "Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set."**
+
 Ctrl + C to stop redis-server and redis-cli
 
 Anyway, that's how I got it working. If I made any mistakes, please correct me. 
