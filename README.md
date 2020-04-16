@@ -1,12 +1,12 @@
 # redis-win10-wsl-install-guide
 
-
 Steps to install latest version of redix on Win (WSL): 
 
-At present (15/04/20), this is the only way to run the latest version of redix.\
-The current redis version is 5.0.8. \
-Some older versions that runs on windows are available at:\
-https://github.com/dmajkic/redis/downloads \
+At present (15/04/20), this is the only way to run the latest version of redix (5.0.8)
+
+Some older versions that runs on windows are available at:
+
+https://github.com/dmajkic/redis/downloads  
 https://github.com/ServiceStack/redis-windows/tree/master/downloads 
 
 But they are a few major patches behind (2.x, 3.x) so I figured I should stick with the latest.
@@ -30,7 +30,7 @@ where app_name is the name of the linux distro. Ex:\
 A shortcut to open PowerShell as Administrator in that folder => \
 "Shift" + right-click on an empty space to get the context menu with the option Run PowerShell as Administrator in that folder.
 
-**5 - After it is installed open it from the start menu**
+**5 - After it is installed, open it from the start menu**
 
 **6 - Create a unix username** (a-z A-Z .  _ -) Don't start with hyphen - 
 
@@ -71,7 +71,7 @@ Then run:
 	sudo make install
 	
 On https://github.com/ServiceStack/redis-windows 
-they said "Installing the binaries using make install will not work. You need to copy them manually to /usr/bin (just like described in the guide, except that they use /usr/local/bin - which is the problem" 
+they said "Installing the binaries using *make install* will not work. You need to copy them manually to /usr/bin (just like described in the guide, except that they use /usr/local/bin - which is the problem" 
 Maybe not then but now it works fine without this workaround.
 
 **10 - Run:**
@@ -91,7 +91,5 @@ That's it!
 
 To edit the config file you can run *sudo nano redis.conf*\
 **update: Just learnt about remote - wsl extension in vs code that let you "Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set."**
-
-Ctrl + C to stop redis-server and redis-cli
 
 Anyway, that's how I got it working. If I made any mistakes, please correct me. 
